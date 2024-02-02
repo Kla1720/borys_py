@@ -1,0 +1,119 @@
+<!-- Booking Start -->
+<form method="POST" action="/booking">
+    <div class="container-fluid booking mt-5 pb-5">
+        <div class="container pb-5">
+            <div class="bg-light shadow" style="padding: 30px;">
+                <div class="row align-items-center" style="min-height: 60px;">
+                    <div class="col-md-10 ">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <select name="terminal_origen_id" class="custom-select px-4" style="height: 47px;">
+                                        <option selected>ORIGEN</option>
+                                        <option value="1">Jaen</option>
+                                        <option value="2">Chachapoyas</option>
+                                        <option value="3">Chamaya</option>
+                                        <option value="4">Pedro Ruiz</option>
+                                        <option value="5">Pomacochas</option>
+                                        <option value="6">Progreso</option>
+                                        <option value="7">Naranjos</option>
+                                        <option value="8">Naranjillo</option>
+                                        <option value="9">Nueva Cajamarca</option>
+                                        <option value="10">Rioja</option>
+                                        <option value="11">Moyobamba</option>
+                                        <option value="12">Tarapoto</option>
+                                        <option value="13">Celendin</option>
+                                        <option value="14">Aguas Claras</option>
+                                        <option value="15">Bagua Grande</option>
+                                        <option value="16">Segunda Jerusalen</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <select name="terminal_destino_id" class="custom-select px-4" style="height: 47px;">
+                                        <option selected>DESTINO</option>
+                                        <option value="1">Jaen</option>
+                                        <option value="2">Chachapoyas</option>
+                                        <option value="3">Chamaya</option>
+                                        <option value="4">Pedro Ruiz</option>
+                                        <option value="5">Pomacochas</option>
+                                        <option value="6">Progreso</option>
+                                        <option value="7">Naranjos</option>
+                                        <option value="8">Naranjillo</option>
+                                        <option value="9">Nueva Cajamarca</option>
+                                        <option value="10">Rioja</option>
+                                        <option value="11">Moyobamba</option>
+                                        <option value="12">Tarapoto</option>
+                                        <option value="13">Celendin</option>
+                                        <option value="14">Aguas Claras</option>
+                                        <option value="15">Bagua Grande</option>
+                                        <option value="16">Segunda Jerusalen</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+
+                                    <div class="input-group date" id="date1" data-target-input="nearest">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control p-4 datetimepicker-input"
+                                            placeholder="Ida" data-target="#date1" data-toggle="datetimepicker" />
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-block" type="submit" id="buscar"
+                            style="height: 47px; margin-top: -2px;">BUSCAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- Booking End -->
+<script>
+    function buscarProgramaciones() {
+        var terminal_origen_id = document.getElementsByName('terminal_origen_id')[0].value;
+        var terminal_destino_id = document.getElementsByName('terminal_destino_id')[0].value;
+
+        // Realizar una solicitud AJAX para enviar los datos a Flask
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/buscar_programaciones', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Manejar la respuesta aquí, por ejemplo, actualizar el contenido de la página
+                console.log(xhr.responseText);
+            }
+        };
+        var data = JSON.stringify({ terminal_origen_id: terminal_origen_id, terminal_destino_id: terminal_destino_id });
+        xhr.send(data);
+    }
+
+    document.getElementById('buscar').addEventListener('click', buscarProgramaciones);
+</script>
+
+<table>
+    <thead>
+        <tr>
+            <th>Horario</th>
+            <th>Otra Información</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for programacion in programaciones %}
+        <tr>
+            <td>{{ programacion.horario }}</td>
+            <td>{{ programacion.otra_informacion }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

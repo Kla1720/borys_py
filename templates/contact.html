@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BORYS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="https://odontistas.000webhostapp.com/gymshark_sweb/imagenes/EXPRESO%20Y%20TURISMO%20BORYS.png"
+        rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+{% include 'topbar.html' %}
+
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Contacto</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Contacto</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contacto</h6>
+                <h1>Contacto Para Cualquier Consulta</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form bg-white" style="padding: 30px;">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate" action="contact.php" method="post">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Nombre"
+                                        required="required" data-validation-required-message="Nombre obligatorio" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email"
+                                        placeholder="Correo Electronico" required="required"
+                                        data-validation-required-message="Rellene su Correo" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Asunto"
+                                    required="required"
+                                    data-validation-required-message="Porfavor introdusca un Asunto" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
+                                    required="required"
+                                    data-validation-required-message="Mensaje obligatorio"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Enviar Mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    <!-- loqueishion start-->
+
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Agencias</h6>
+                <h1>Nuestras Agencias </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                            src="https://www.google.com/maps/embed/v1/place?q=Jirón+20+de+Abril+210,+Moyobamba,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                            width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de
+                                    Moyobamba</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 902 725 476</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51 902 725 476&text=" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/place?q=Terminal+Terrestre,+Chachapoyas,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de
+                                    Chachapoyas</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 927 675 899</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51927 675 899&text=" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/place?q=Jiron.+Tacna+589,+Nueva+Cajamarca,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de Nueva Cajamarca</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 943 498 595</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                        <i class=""></i>
+                                        <p class="mb-0 d-inline-block"></p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                            src="https://www.google.com/maps/embed/v1/place?q=Av.+Chachapoyas+2832,+Bagua+Grande,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                            width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de Bagua Grande</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 960 482 241</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51960482241&text=" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/search?q=Av.+Manuel+Antonio+Mesones+Muro+2003,+Jaén,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de
+                                    Jaen</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 976 668 206</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51976 668 206&text=" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/place?q=Jiron.+Tacna+589,+Nueva+Cajamarca,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de Naranjos</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 950 624 971</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51950 624 971&text=" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                            src="https://www.google.com/maps/embed/v1/place?q=Av.+Chachapoyas+2832,+Bagua+Grande,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                            width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de Chamaya</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 950 624 971</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51950624971&text=Hola quisiera informacion de pasajes" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/place?q=Terminal+Terrestre,+Chachapoyas,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de
+                                    Pedro Ruiz</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 950 624 971</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://wa.me/51950 624 971" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/search?q=negocio+ramos,+pomacochas&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de Pomacochas</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 970 283 933</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51 970 283 933&text=" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/place?q=Terminal+Terrestre,+Chachapoyas,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de
+                                    Naranjillo</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 950 624 971</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51950 624 971&text=" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/place?q=Jiron.+Tacna+589,+Nueva+Cajamarca,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de Rioja</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 950 624 971 </p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51950624971&text=" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/place?q=Terminal+Terrestre,+Chachapoyas,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de
+                                    Celendin</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us">
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block">+51 915 200 805</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51915 200 805&text=" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+               
+                <div class="col-lg-4 col-sm-6 col-12 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/place?q=Jiron.+Tacna+589,+Nueva+Cajamarca,+Perú&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                width="100%" height="270" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="px-3 pt-3 pb-4">
+                                <h3 class="ml-2 mb-2"
+                                    style="font-size: 18px !important;font-weight: 700;color: #3C4858;">Agencia de Segunda Jerusalen</h3>
+                                <div class="d-flex align-items-start icon-contact-us mb-2">
+                                    <i class="fa fa-map-marker-alt mr-2">
+                                        <p class="mb-0 d-inline-block">DIRECCION DE LA AGENCIA</p>
+                                    </i>
+                                </div>
+                                <div class="d-flex align-items-start icon-contact-us" >
+                                    <i class="fa fa-phone-alt mr-2">
+                                        <p class="mb-0 d-inline-block"  >+51 939 083 805</p>
+                                    </i>
+                                </div>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=51939 083 805&text=" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <p class="mb-0 d-inline-block">Dirigirse a WhatsApp</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- end-->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">BOR</span>YS</h1>
+                </a>
+                <p>Nos esforzamos por cumplir con los requisitos de transporte del mercado, asegurando la plena
+                    satisfacción de nuestros clientes al ofrecer servicios que superan sus expectativas.</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">SIGUENOS</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2"
+                        href="https://www.facebook.com/profile.php?id=61550915067896"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.tiktok.com/@turismo.borys"><i
+                            class="fab fa-tiktok"></i></a>
+                    <a class="btn btn-outline-primary btn-square"
+                        href="https://www.instagram.com/expreso_y_turismo_borys/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Servicios</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Nosotros</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destinos</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Paquetes</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guias</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Flota</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contacto</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Direccion</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+51 999 999 999</p>
+                <p><i class="fa fa-envelope mr-2"></i>expresoyturismoborys@hotmail.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Recibe Ofertas</h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;"
+                            placeholder="Correo Electronico">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">2024</a>. TURISMO BORYS.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
